@@ -7,6 +7,11 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    transition-property:all;
+    transition:0.2s ease-in-out;
+}
+a:hover {
+    font-size:30px;
 }
 .głównytext {
     text-align: center;
@@ -16,6 +21,7 @@ a {
 .lewytext {
     color: rgb(59, 59, 59);
     transition:all 0.5s ease-in-out;
+    transition-property:all;
     text-align: left;
     font-size: 15;
     line-height: 0.6;
