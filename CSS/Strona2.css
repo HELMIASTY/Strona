@@ -3,19 +3,13 @@ body {
     background-image: url("./Multimedia/5.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
     line-height: 0.5;
     text-align: center;
     position: relative;
     top: 1440;
     left: 0;
-}
-.tło_2 {
-    background-image: url("./Multimedia/Bez\ nazwy.png");
-    background-size:cover;
-    background-position: center;
-    background-attachment:local;
-
 }
 a {
     color: white;
