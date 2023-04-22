@@ -12,6 +12,9 @@ a {
 }
 a:hover {
     font-size:30px;
+    color:black;
+    background-color:white;
+    padding:0%;
 }
 .głównytext {
     text-align: center;
@@ -20,8 +23,8 @@ a:hover {
 }
 .lewytext {
     color: rgb(59, 59, 59);
-    transition:all 0.5s ease-in-out;
     transition-property:all;
+    transition:all 0.2s ease-in-out;
     text-align: left;
     font-size: 15;
     line-height: 0.6;
@@ -30,5 +33,4 @@ a:hover {
 .lewytext:hover {
     color: aliceblue;
     background-color: #000000;
-    border: 1px solid white;
 }
