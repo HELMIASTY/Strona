@@ -3,6 +3,7 @@ body {
     background-color: #000000;
     color : white;
     justify-content: space-between;
+    font-size: 20px;
 }
 a {
     color: inherit;
@@ -11,10 +12,11 @@ a {
     transition:0.2s ease-in-out;
 }
 a:hover {
-    font-size:30px;
+    font-size: 20px;
     color:black;
-    background-color:white;
-    padding:0%;
+    background-color: #f1f1f1;
+    border-radius: 100px;
+    display: inline-block;
 }
 .głównytext {
     text-align: center;
