@@ -37,3 +37,10 @@ a:hover {
     color: aliceblue;
     background-color: #000000;
 }
+.znikające-rzeczy {
+    transition: all 0.2s;
+    padding: 0%;
+}
+.znikające-rzeczy:hover {
+    opacity: 0;
+}
