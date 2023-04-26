@@ -10,5 +10,31 @@
 width - szerokość
 height - wysokość
 lub style="width:128px;height:128px;"-->
-</body>
+<!--Mapowanie (linki w zdjęciu)
+--><img src="./CSS/Multimedia/workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+    <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+<!--Klikany obszar jest definiowany przez <area>
+atrybuty to
+rect - obszar prostokątny
+circle - obszar kołowy
+poly - region wielokątny
+default - cały region-->
+<!--Współrzędne obszaru prostokątnego określamy
+shape="rect" coords="x, y, x, y(przeciwny kąt)"-->
+<!--Współrzędne obszaru kołowego określamy
+shape="circle" coords="x, y(środka okręgu), (promień okręgu)"-->
+<!--Współrzędne obszaru wielokątowego określamy
+shape="poly" coords="x, y(po kolei wszytkich kątów)"-->
+<!--Tło
+style="background-image: url(image url)"-->
+<!--Jeśli obraz jest zamały aby zakrywał całe tło strony trzeba dodać background-repeat: no-repeat;-->
+<!--Jeśli chcesz, aby obraz tła obejmował cały element trzeba ustawić background-size na cover (background-size: cover;)
+Ponadto, aby mieć pewność, że cały element jest zawsze zakryty, ustaw background-attachmentwłaściwość na fixed (background-attachmentwłaściwość: fixed;)-->
+<!--Aby rozciągnąć obraz w tle background-size: 100% 100%;-->
+<!--Aby ustawić ikonę domeny ustawiamy <link rel="icon" type="image/rozszerzenie href="plik">"-->
 </html>
