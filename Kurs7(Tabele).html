@@ -29,7 +29,7 @@ Przykład tebeli
 <!--Każda komórka tabeli jest zdefiniowana przez<td> i </td> tb oznacza zawartość komórki tabelki
 Komórka tabeli może zawierać wszelkiego rodzaju elementy HTML: tekst, obrazy, listy, łącza, inne tabele itp.
 Każdy WIERSZ tabeli zaczyna się od <tr>a kończy znacznikiem </tr>
-np-->
+<th> Nagłówek tabelinp-->
 <p> 
   <table>
     <tr>
@@ -49,5 +49,10 @@ np-->
     </tr>
   </table>
 </p>
+<!--Aby ustawić obranowanie trzeba urzyć poleceń css
+table, th, td {
+  border: 1px solid black;
+}
+Aby obramowanie było pojedyńczą linnią trzeba dodać border-collapse: collapse;-->
 </body>
 </html>
