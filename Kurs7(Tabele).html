@@ -81,6 +81,44 @@ th {
 }-->
 <!--Aby nagłówek obejmował więcej kolumn trzeba dodać atrybut colspan <th colspan="2">nie musi być 2 może być więcej</th>-->
 <!--By tabela miałą podpis trzeba dodać po tagu <tabele> <caption> opis </caption></tabele>-->
+  <!--WYPEŁNIENIE I ODSTĘPY-->
+<!--Aby dodać wypełnienie w komurkach trzeba urzyć właściwości css padding: rozmiar;
+np: th, td {
+  padding: 15px;
+}
+Podany przykład wykona przerwe pomiędzy krewędzią komórki a tekstem o długości 15pikseli-->
+<!--Aby dodać dopełnienie tylko z góry dodajemy tylko padding-top: długość;
+oczywiście można dodać z innych stron padding-bottom, padding-left, padding-right-->
+<!--Odstępy międziy komórkami deninujemy poleceniem css border-spacing:30px;-->
+  <!--KOMÓ<RKI-->
+<!--Komórki moga obejmywać więcej niż jeden wiersz
+urzywając atrubutu colspan="x" pod X wstawaimy ile kolumn ma zajmowac dana komórka
+aby rozciągnąć komórke w wierszach musimy urzyć atrybutu rowspan="x" i za X postawic ile wierszy ma zajmować komórka-->
+  <!--STYLISTYKA-->
+<!--Aby sylizować każdy inny element wiersza albo komumny, w przypadku wiersza w css piszemy
+tr:nth-child(even) {
+  background-color: white;
+}
+even oznacza że kolor pojawi się w parzystych wierszach
+aby styl miał sie pojawić w nieparzystych wierszach zamiast even stwawiamy odd-->
+<!--Aby stylizować kolumny zamiast tr wstawiamy td oraz th (td:nth-child(even), th:nth-child(even) {)chyba że chcemy stylizować tabelę bez nagłówka, wtedy nie urzywamy th
+Możemy połączyc stylizację z dwóch przykładów i będziemy mieli paski w co drugim rzędzie i co drugiej kolumnie
+jeśli użyjemy przezroczystości uzyskamy efekt nakładania się-->
+<!--Oczywiście można urzywać :hover na wszystkie części tabeli-->
+  <!--GRUPY KOLORÓW-->
+<!--Jeśli mówimy o kolumnach-->
+<!--
+<colorgroup>
+  <col span="2" style="background-color: black">
+</colorgroup>-->
+<!--To sprawi że pierwsze 2 kolumny od lewej będą miały czarny kolor tła
+Oczywiście można dodać inne stylizację takie jak naprzykład color czcionki, samą czcionkę, wielkość tekstu itp-->
+<!--Aby ustawić styl kolumn w środku musimy najpierw zdefiniować wcześniejsze
+Np Jeśli mame tabele z 5 kolumnami i chcemy aby 3 i 4 kolumna miała zieloną czcionkę to
+<colorgrup>
+  <col span="2"> - puste kolumny od lewej
+  <col span="2" style="color:green">
+</colorgrup>-->
 <p>
     <a href="Strona.html">Powrót na stonę początkową</a>
 </p>
