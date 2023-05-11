@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Tabele
+    </title>
+</head>
+<body>
+<!--Tabela w HTML składa się z komórek tabeli umieszczonych w wierszach i kolumnach-->
+Przykład tebeli
+<p>
+    <table style="width:100%">
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+    </table>
+</p>
+<!--Każda komórka tabeli jest zdefiniowana przez<td> i </td> tb oznacza zawartość komórki tabelki
+Komórka tabeli może zawierać wszelkiego rodzaju elementy HTML: tekst, obrazy, listy, łącza, inne tabele itp.
+Każdy WIERSZ tabeli zaczyna się od <tr>a kończy znacznikiem </tr>
+<th> Nagłówek tabelinp-->
+<p> 
+  <table>
+    <tr>
+      <th>Person 1</th>
+      <th>Person 2</th>
+      <th>Person 3</th>
+    </tr>
+    <tr>
+      <td>Emil</td>
+      <td>Tobias</td>
+      <td>Linus</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>14</td>
+      <td>10</td>
+    </tr>
+  </table>
+</p>
+<!--Aby ustawić obranowanie trzeba urzyć poleceń css
+table, th, td {
+  border: 1px solid black;
+}
+Aby obramowanie było pojedyńczą linnią trzeba dodać border-collapse: collapse;-->
+<!--Aby ustawić kolor komórki używany background-color dla th, tb-->
+<!--Aby zaokrąglić krawedzie dodajemy border-radius-->
+<!--Style komórki border-style:
+dotted - Kropkowana
+dashed - Linniwa
+solid - Stała
+double - Podwójna
+groove - Wklęsła
+ridge - Wypukła 
+inset - Jaśniejszy dół
+outset - Jaśniejsza góra
+none - Brak
+hidden - Ukryta-->
+<!--Kolor ramki
+border-color:color;-->
+  <!--ROZMIARY-->
+<!--Aby ustawić rozmiar dodajemy atrybut style="width lub height bądz oba"-->
+<!--Aby ustawić szerokość kolumny do <th> lub <td> dodajemy style="width:70%;"-->
+<!--W przypadku wysokości height-->
+  <!--NAGŁÓWKI-->
+<!--Nagłówki określamy za pomocą <th> który okresla jedną komurkę tabeli-->
+<!--Domyślnie nagłówki są pogrubione oraz wyśrodkowane aby wyrównać tekst do lewej mmusimy urzyć css
+th {
+  text-aling:left;
+}-->
+<!--Aby nagłówek obejmował więcej kolumn trzeba dodać atrybut colspan <th colspan="2">nie musi być 2 może być więcej</th>-->
+<!--By tabela miałą podpis trzeba dodać po tagu <tabele> <caption> opis </caption></tabele>-->
+  <!--WYPEŁNIENIE I ODSTĘPY-->
+<!--Aby dodać wypełnienie w komurkach trzeba urzyć właściwości css padding: rozmiar;
+np: th, td {
+  padding: 15px;
+}
+Podany przykład wykona przerwe pomiędzy krewędzią komórki a tekstem o długości 15pikseli-->
+<!--Aby dodać dopełnienie tylko z góry dodajemy tylko padding-top: długość;
+oczywiście można dodać z innych stron padding-bottom, padding-left, padding-right-->
+<!--Odstępy międziy komórkami deninujemy poleceniem css border-spacing:30px;-->
+  <!--KOMÓ<RKI-->
+<!--Komórki moga obejmywać więcej niż jeden wiersz
+urzywając atrubutu colspan="x" pod X wstawaimy ile kolumn ma zajmowac dana komórka
+aby rozciągnąć komórke w wierszach musimy urzyć atrybutu rowspan="x" i za X postawic ile wierszy ma zajmować komórka-->
+  <!--STYLISTYKA-->
+<!--Aby sylizować każdy inny element wiersza albo komumny, w przypadku wiersza w css piszemy
+tr:nth-child(even) {
+  background-color: white;
+}
+even oznacza że kolor pojawi się w parzystych wierszach
+aby styl miał sie pojawić w nieparzystych wierszach zamiast even stwawiamy odd-->
+<!--Aby stylizować kolumny zamiast tr wstawiamy td oraz th (td:nth-child(even), th:nth-child(even) {)chyba że chcemy stylizować tabelę bez nagłówka, wtedy nie urzywamy th
+Możemy połączyc stylizację z dwóch przykładów i będziemy mieli paski w co drugim rzędzie i co drugiej kolumnie
+jeśli użyjemy przezroczystości uzyskamy efekt nakładania się-->
+<!--Oczywiście można urzywać :hover na wszystkie części tabeli-->
+  <!--GRUPY KOLORÓW-->
+<!--Jeśli mówimy o kolumnach-->
+<!--
+<colorgroup>
+  <col span="2" style="background-color: black">
+</colorgroup>-->
+<!--To sprawi że pierwsze 2 kolumny od lewej będą miały czarny kolor tła
+Oczywiście można dodać inne stylizację takie jak naprzykład color czcionki, samą czcionkę, wielkość tekstu itp-->
+<!--Aby ustawić styl kolumn w środku musimy najpierw zdefiniować wcześniejsze
+Np Jeśli mame tabele z 5 kolumnami i chcemy aby 3 i 4 kolumna miała zieloną czcionkę to
+<colorgrup>
+  <col span="2"> - puste kolumny od lewej
+  <col span="2" style="color:green">
+</colorgrup>-->
+<p>
+    <a href="Strona.html">Powrót na stonę początkową</a>
+</p>
+</body>
+</html>
