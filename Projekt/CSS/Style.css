@@ -40,19 +40,19 @@
 }
 @keyframes fala1 {
     0% {
-        transform: translateX(-30px);
+        transform: translateX(-10px);
     }
     25% {
         transform: translateX(0px);
     }
     50% {
-        transform: translateX(30px);
+        transform: translateX(10px);
     }
     75% {
         transform: translateX(0px);
     }
     100% {
-        transform: translateX(-30px);
+        transform: translateX(-10px);
     }
 }
 .fala:nth-child(2) {
@@ -94,20 +94,46 @@ a {
 .lewo {
     left: 25%;
 }
-.lewo a:hover {
-    color: white;
-}
 .środek {
     left: 50%;
 }
 .lewo:hover, .prawo:hover, .środek:hover {
     animation: wave 2s ease-in infinite;
 }
+.lewo a:hover, .środek a:hover, .prawo a:hover {
+    color: white;
+}
 .obraz1 {   
-    transition: 1s ease-in;
+    transition: 0.5s ease-in;
 }
 .obraz1:hover {
     background-image: url(./Multimedia/JW.jpeg);
+    background-size: cover;
+
+    padding-top: 122.5px;
+    padding-bottom: 122.5px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-radius: 50px;
+}
+.obraz2 {   
+    transition: 0.5s ease-in;
+}
+.obraz2:hover {
+    background-image: url(./Multimedia/mo.jpg);
+    background-size: cover;
+
+    padding-top: 122.5px;
+    padding-bottom: 122.5px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-radius: 50px;
+}
+.obraz3 {   
+    transition: 0.5s ease-in;
+}
+.obraz3:hover {
+    background-image: url(./Multimedia/Vg.jpg);
     background-size: cover;
 
     padding-top: 122.5px;
