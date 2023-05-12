@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="./CSS/Strona.css">
 </head>
 <body>
+    <script type="text/javascript">
+        const dvd = document.querySelector('.dvd');
+const screenWidth = window.innerWidth;
+const screenHeight = window.innerHeight;
+let x = 0;
+let y = 0;
+let xSpeed = 5; /* prędkość przesuwania poziomego */
+let ySpeed = 5; /* prędkość przesuwania pionowego */
+
+function animate() {
+  x += xSpeed;
+  y += ySpeed;
+
+  if (x + dvd.clientWidth >= screenWidth || x <= 0) {
+    xSpeed = -xSpeed;
+  }
+
+  if (y + dvd.clientHeight >= screenHeight || y <= 0) {
+    ySpeed = -ySpeed;
+  }
+
+  dvd.style.transform = `translate(${x}px, ${y}px)`;
+  requestAnimationFrame(animate);
+}
+
+animate();
+    </script>
+    <div class="dvd"><img src="./CSS/Multimedia/Twitch2.png"></div>
     <div class="lewytext">
         <p>
             <h2>

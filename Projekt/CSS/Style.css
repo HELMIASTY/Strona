@@ -1,0 +1,118 @@
+.strona1 {
+    background-image:url(./Multimedia/Tło.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+
+    animation: wjazd ease-in 1s;
+    
+    overflow-x: hidden;
+}
+@keyframes wave {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-45%, -50%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes wjazd {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    90% {
+        opacity: 0.5;
+        transform: translateY(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes fala1 {
+    0% {
+        transform: translateX(-30px);
+    }
+    25% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    75% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-30px);
+    }
+}
+.fala:nth-child(2) {
+    animation-delay: -0.15s;
+}
+.fala:nth-child(3) {
+    animation-delay: -0.2s;
+}
+.fala:nth-child(4) {
+    animation-delay: -0.25s;
+}
+.fala:nth-child(5) {
+    animation-delay: -0.3s;
+}
+.fala:nth-child(6) {
+    animation-delay: -0.35s;
+}
+.fala:nth-child(7) {
+    animation-delay: -0.4s;
+}
+.fala {
+    animation: fala1 4s linear infinite;
+}
+a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.lewo, .prawo, .środek {
+    padding: 30px;
+    top: 525px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.prawo {
+    left: 75%;
+}
+.lewo {
+    left: 25%;
+}
+.lewo a:hover {
+    color: white;
+}
+.środek {
+    left: 50%;
+}
+.lewo:hover, .prawo:hover, .środek:hover {
+    animation: wave 2s ease-in infinite;
+}
+.obraz1 {   
+    transition: 1s ease-in;
+}
+.obraz1:hover {
+    background-image: url(./Multimedia/JW.jpeg);
+    background-size: cover;
+
+    padding-top: 122.5px;
+    padding-bottom: 122.5px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-radius: 50px;
+}
