@@ -134,7 +134,7 @@ a {
     transition: 0.5s ease-in;
 }
 .obraz3:hover {
-    background-image: url(./Multimedia/Vg.jpg);
+    background-image: url(./Multimedia/Gwiaździsta_noc.jpg);
     background-size: cover;
 
     padding-top: 122.5px;
@@ -144,6 +144,7 @@ a {
     border-radius: 50px;
 }
 /*----------------------------------------------------------------*/
+
 
 .strona2, .strona2 a {
     background-image:url(./Multimedia/VVG.jpg);
@@ -164,7 +165,9 @@ a {
 .strona2 h1 {
     font-size: 80px;
 }
-
+.strona2 a {
+    background: none;
+}
 .dw {
     font-size: 10px;
     transition: all 0.3s ease-in-out;
@@ -172,6 +175,7 @@ a {
 .dw a:hover {
     color: gray;
 }
+
 
 .link_back a {
     position: fixed;
@@ -198,9 +202,11 @@ a {
     padding-bottom: 40vh;
     font-size: 20px
 }
-.link a:hover {
-    animation: link 0.2s ease-in
+.full-screen a {
+    font-size: 20px;
 }
+
+
 #zycie {
     scroll-margin-top: -22vh;
     scroll-padding-top: -22vh;
@@ -213,6 +219,11 @@ a {
     scroll-margin-top: -10vh;
     scroll-padding-top: -10vh;
 }
+#dzieła {
+    scroll-margin-top: -50vh;
+    scroll-padding-top: -50vh;
+}
+
 .lewy-box {
     font-size: 10px;
     position: fixed;
@@ -222,7 +233,6 @@ a {
 }
 .lewy-box a {
     padding: 5px;
-    background: none;
     display: block;
     text-decoration: none;
     transition: all 0.3s ease-out;
@@ -232,20 +242,108 @@ a {
     background: none;
     transform: translateX(30px);
 }
-.dzieła {
+
+
+.dziełaa {
+    position: absolute;
     display: block;
+    transform: translate(-50%, -50%);
+    margin-left: 50%;
+    margin-top: 200px;
+    transition: all 0.4s ease-in-out;
+    white-space: nowrap;
 }
 .Gwiaździsta_noc {
-    position: absolute;
-    float: left;
-    margin-left: 100px;
+    transition: all 0.4s ease-in-out;
 }
 .Gwiaździsta_noc:hover {
-    background-image: url(./Multimedia/VG.jpg);
+    background-image: url(./Multimedia/Gwiaździsta_noc.jpg);
     background-position: center;
     background-size: cover;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding: 20%;
+    border-radius: 20px;
+}
+.Gwiaździsta_noc a:hover {
+    font-size: 18px;
+}
+
+
+.Polne_maki {
+    transition: all 0.4s ease-in-out;
+}
+.Polne_maki:hover {
+    background-image: url(./Multimedia/Polne_maki.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20%;
+    border-radius: 20px;
+}
+.Polne_maki a:hover {
+    font-size: 18px;
+}
+
+
+.Słoneczniki {
+    transition: all 0.4s ease-in-out;
+}
+.Słoneczniki:hover {
+    background-image: url(./Multimedia/Słoneczniki.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20%;
+    border-radius: 20px;
+}
+.Słoneczniki a:hover {
+    font-size: 18px;
+}
+
+
+.Kawiarnia_nocą {
+    transition: all 0.4s ease-in-out;
+}
+.Kawiarnia_nocą:hover {
+    background-image: url(./Multimedia/Kawiarnia_nocą.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20%;
+    border-radius: 20px;
+}
+.Kawiarnia_nocą a:hover {
+    font-size: 18px;
+}
+
+
+.Portret_dr_Gacheta {
+    transition: all 0.4s ease-in-out;
+}
+.Portret_dr_Gacheta:hover {
+    background-image: url(./Multimedia/Portret\ dr.\ Gacheta.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20%;
+    border-radius: 20px;
+}
+.Portret_dr_Gacheta a:hover {
+    font-size: 18px;
+}
+
+
+.Autoportret_z_przyciętym_uchem {
+    transition: all 0.4s ease-in-out;
+}
+.Autoportret_z_przyciętym_uchem:hover {
+    background-image: url(./Multimedia/Autoportret\ z\ przyciętym\ uchem.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 20%;
+    border-radius: 20px;
+    white-space: wrap;
+}
+.Autoportret_z_przyciętym_uchem a:hover {
+    font-size: 18px;
+}
+
+
+.o {
+    opacity: 0;
 }
