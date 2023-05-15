@@ -161,12 +161,22 @@ a {
 
     overflow-x: hidden;
     overflow-y: hidden;
+    
+    animation: pojawianie 2s ease-in;
 }
 .strona2 h1 {
     font-size: 80px;
 }
 .strona2 a {
     background: none;
+}
+@keyframes pojawianie {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 .dw {
     font-size: 10px;
@@ -205,7 +215,14 @@ a {
 .full-screen a {
     font-size: 20px;
 }
-
+.full-screen2 {
+    padding-top: 40vh;
+    padding-bottom: 70vh;
+    font-size: 20px
+}
+.full-screen2 a {
+    font-size: 20px;
+}
 
 #zycie {
     scroll-margin-top: -22vh;
