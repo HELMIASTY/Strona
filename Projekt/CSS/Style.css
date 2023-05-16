@@ -461,6 +461,7 @@ a {
     box-shadow: 0 0 10px black;
 }
 .text {
+    z-index: 100;
     text-align: left;
     position: fixed;
     top: 10vh;
@@ -470,4 +471,19 @@ a {
     -webkit-text-fill-color: transparent;
     -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+}
+/* .atrapa {
+    padding: 1%;
+    border-radius: 40px;
+    z-index: 1;
+    text-align: left;
+    position: fixed;
+    top: 8vh;
+    left: 18vh;
 }   
+.atrapa {
+    background: linear-gradient(to bottom, #ffffff, #000000);
+    -webkit-text-fill-color: transparent;
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+} */
