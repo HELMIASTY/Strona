@@ -257,6 +257,8 @@ a {
 .lewy-box a:hover {
     color: gray;
     background: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px black;
     transform: translateX(30px);
 }
 
@@ -431,31 +433,41 @@ a {
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.strona3 h1 {
+.strona4 h1 {
     font-size: 80px;
 }
-.strona3 a {
+.strona4 a {
     background: none;
 }
-
-.lewy-box2 {
+.lewy-box3 {
     z-index: 9999;
     font-size: 10px;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     text-align: center;
 }
-.lewy-box2 a {
+.lewy-box3 a {
     color: rgba(255, 255, 255, 0.5);
     padding: 5px;
     display: block;
     text-decoration: none;
     transition: all 0.3s ease-out;
 }
-.lewy-box2 a:hover {
+.lewy-box3 a:hover {
     color: rgb(255, 255, 255);
     border-radius: 40px;
-    transform: translateX(30px);
+    transform: translateX(-30px);
     box-shadow: 0 0 10px black;
 }
+.text {
+    text-align: left;
+    position: fixed;
+    top: 10vh;
+    left: 20vh;
+    background: linear-gradient(to bottom, #ffffff, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+}   
