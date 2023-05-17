@@ -520,3 +520,23 @@ a {
 .ggr:hover, .death_Race_for_Love:hover, .lnd:hover, .fd:hover {
     opacity: 1;
 }
+@keyframes kolory {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+    25% {
+        color: rgb(127.5, 127.5, 127.5);
+    }
+    50% {
+        color: rgb(255, 255, 255)
+    }
+    75% {
+        color: rgb(127.5, 127.5, 127.5);
+    }
+    100% {
+        color: rgb(0, 0, 0);
+    }
+}
+.text a {
+    animation: kolory 3s linear infinite;
+}
