@@ -430,8 +430,6 @@ a {
     
     animation: pojawianie 2s ease-in;
 
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 .strona4 h1 {
     font-size: 80px;
@@ -461,29 +459,64 @@ a {
     box-shadow: 0 0 10px black;
 }
 .text {
-    z-index: 100;
     text-align: left;
-    position: fixed;
+    position: absolute;
     top: 10vh;
     left: 20vh;
-    background: linear-gradient(to bottom, #ffffff, #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    color: black;
 }
-/* .atrapa {
-    padding: 1%;
-    border-radius: 40px;
-    z-index: 1;
-    text-align: left;
+.text a {
+    color: black;
+}
+.text a:hover {
+    font-size: 18px;
+}
+
+.linki_albumy {
+    display: inline-block;
     position: fixed;
-    top: 8vh;
-    left: 18vh;
-}   
-.atrapa {
-    background: linear-gradient(to bottom, #ffffff, #000000);
-    -webkit-text-fill-color: transparent;
-    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
-} */
+    bottom: 10px;
+    right: 10px;
+    width: 18%;
+}
+@keyframes swing {
+    20% {
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+
+    40% {
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+
+    60% {
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+
+    80% {
+        transform: rotate3d(0, 0, 1, -5deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+}
+#ggr1:target {
+    animation: swing 1s;
+}
+#drfl1:target {
+    animation: swing 1s;
+}
+#lnd1:target {
+    animation: swing 1s;
+}
+#fd1:target {
+    animation: swing 1s;
+}
+
+.ggr, .death_Race_for_Love, .lnd, .fd {
+    opacity: 0.2;
+    transition: 0.4s;
+}
+.ggr:hover, .death_Race_for_Love:hover, .lnd:hover, .fd:hover {
+    opacity: 1;
+}
