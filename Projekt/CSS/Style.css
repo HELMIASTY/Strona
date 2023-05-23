@@ -161,7 +161,6 @@ a {
     animation: pojawianie 2s ease-in;
 
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 .strona2 h1 {
     font-size: 80px;
@@ -207,39 +206,21 @@ a {
     background-attachment: fixed;
 }
 .full-screen {
-    padding-top: 40vh;
-    padding-bottom: 40vh;
+    padding-top: 30vh;
+    margin-bottom: 70vh;
     font-size: 20px
 }
 .full-screen a {
     font-size: 20px;
 }
 .full-screen2 {
-    padding-top: 40vh;
-    padding-bottom: 70vh;
+    padding-top: 30vh;
+    margin-bottom: 70vh;
     font-size: 20px
 }
 .full-screen2 a {
     font-size: 20px;
 }
-
-#zycie {
-    scroll-margin-top: -22vh;
-    scroll-padding-top: -22vh;
-  }
-#styl {
-    scroll-margin-top: -14vh;
-    scroll-padding-top: -14vh;
-}
-#wpływ {
-    scroll-margin-top: -10vh;
-    scroll-padding-top: -10vh;
-}
-#dzieła {
-    scroll-margin-top: -50vh;
-    scroll-padding-top: -50vh;
-}
-
 .lewy-box {
     z-index: 9999;
     font-size: 10px;
@@ -383,7 +364,6 @@ a {
     animation: pojawianie 2s ease-in;
 
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 .strona3 h1 {
     font-size: 80px;
