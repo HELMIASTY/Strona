@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.back a {
+    color: purple;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.back a:hover {
+    font-size: 130%;
+    background: linear-gradient(to right, #616161, #ececec);
+}
+
+img {
+    border-radius: 30px
+}
+
+.poeta,
+.pac,
+.art {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 600px;
+}
+
+.poeta {
+    float: left;
+    left: 10%;
+
+}
+
+.pac {
+    left: 50%;
+}
+
+.art {
+    float: left;
+    left: 90%;
+}
+
+.back {
+    top: 10px;
+    left: 10px;
+    position: fixed;
+}
+
+h2 {
+    color: rgb(95, 95, 95);
+
+}
+
+.albumy {
+    text-align: center;
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.albumy iframe {
+    margin-bottom: 10px;
+}
+
+.albumy iframe:hover {
+    animation: anim 0.6s linear;
+}
+.obrazy img {
+    margin-bottom: 10px;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-5%);
+    }
+
+    50% {
+        transform: translateX(0%);
+    }
+
+    75% {
+        transform: translateX(5%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
