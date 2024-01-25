@@ -36,10 +36,8 @@ fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
             e.data.activities.forEach(element => {
                 console.log(element);
                 if ((element.id == "spotify:1") || (element.id == "custom")) {
-                    document.getElementById("dc").innerText = "";
                 }
                 else {
-                    document.getElementById("dc").innerText ="gram w "+ element.name;
                     test = true;
                     dane = element;
                 }
